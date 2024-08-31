@@ -22,7 +22,7 @@ function ALLNews() {
   useEffect(() => {
     setIsLoading(true);
     setError(null);
-    fetch(`http://localhost:3000/all-news?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-portal-5.onrender.com/all-news?page=${page}&pageSize=${pageSize}`)
       .then(response => {
         if (response.ok) {
           // console.log(response)
