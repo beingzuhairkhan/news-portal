@@ -26,7 +26,7 @@ function TopHeadline() {
     setError(null);
     const categoryParam = params.category || "general";
     console.log(categoryParam)
-    fetch(`http://localhost:3000/top-headlines/${categoryParam}?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-portal-5.onrender.com/top-headlines/${categoryParam}?page=${page}&pageSize=${pageSize}`)
 
       .then(response => {
         if (response.ok) {
